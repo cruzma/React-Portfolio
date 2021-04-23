@@ -80,7 +80,7 @@ section h2{
 /* hero section begins */
 
 .hero{
-  /* background-image: url(./assets/images/hero-pic.jpg); */
+  background-image: url(./assets/images/hero-pic.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
