@@ -5,11 +5,22 @@
   scroll-behavior: smooth;
 }
 
+html, body{
+  height: 100%;
+}
+
 body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgba(68, 88, 119, 1);
   background-color: rgba(238, 238, 247, 1);
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+  flex: 1 0 auto;
+  min-height: 100vh;
 }
 
 /* header section begins */
@@ -110,13 +121,15 @@ section h2{
 
 .about-me-info{
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 
 .image-container{
   max-width: 400px;
   max-height: 400px;
-
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .image-container img{
@@ -267,6 +280,15 @@ section h2{
 
 /* contact section ends */
 
+/*Resume Section Begins*/
+
+.proficiencies{
+  background-color: rgba(238, 238, 247, 0.815);
+  border-radius: 20px;
+  padding: 40px 40px 40px 40px;
+  margin: 20px;
+}
+
 /* footer section begins */
 
 footer{
@@ -276,6 +298,15 @@ footer{
   height: 100px;
   background-color: rgba(68, 88, 119, 1);
   color:rgba(238, 238, 247, 1);
+  flex-shrink: 0;
+}
+
+footer h2{
+  margin-left: 20px;
+}
+
+footer p{
+  margin-right: 20px;
 }
 
 /*footer ends*/
@@ -320,6 +351,7 @@ footer{
     }
 
     header nav ul li a{
+      font-size: 1rem;
       margin: 3px;
     }
     .hero{
@@ -359,14 +391,36 @@ footer{
 
   @media screen and (max-width: 450px){
       header{
-        padding: 0;
+            padding: 0;
+            flex-wrap: wrap;
+      }
+      header nav ul li a{
+        margin: 1px;
+        padding: 5px 10px;
+      }
+
+      header nav ul{
+        flex-wrap: wrap;
+        justify-content: space-around;
       }
       .hero h1{
         font-size: 35px;
       }
 
-      header nav ul li a{
-        font-size: 1rem;
-        margin: 3px;
+      .proficiencies{
+        padding: 10px 40px 10px 40px;
+      }
+
+      footer{
+        flex-direction: column;
+      }
+
+      footer h2{
+        margin-left: 0;
+        margin-top: 10px;
+      }
+
+      footer p{
+        margin-right: 0;
       }
   }

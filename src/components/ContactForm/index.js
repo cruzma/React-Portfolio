@@ -1,6 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { validateEmail } from '../../utils/helpers';
 
 function Contact(){
+
+    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const [errorMessage, setErrorMessage] = useState('');
+    const { name, email, message } = formState;
+    
+
+    function handleChange(e){
+        if(e.target.name === 'email'){
+            const isValid = validateEmail(e.target.value);
+            console.log(isValid);
+            // isValid conditional statement
+            if (!isValid) {
+                setErrorMessage('Your email is invalid.');
+            } else {
+                if(!e.target.value.length){
+                    setErrorMessage(`${e.target.name} is required`);
+                } else {
+                    setErrorMessage('');
+                }
+            }
+        }
+        if(!errorMessage){
+            setFormState({...formState, [e.target.name]: e.target.value})
+        }
+        
+        console.log('errorMessage', errorMessage);
+    }
+
+    function handleSubmit(e){
+        e.preventDefault();
+        if (!errorMessage) {
+            setFormState({ [e.target.name]: e.target.value });
+            console.log('Form', formState);
+          }
+    }
+
+    console.log(formState);
+
     return(
         <section class="contact">
             <h2 id="contact-me">Contact Me</h2>
@@ -22,12 +61,14 @@ function Contact(){
 
                 <div class="contact-form">
                 <h3>Leave me a Message</h3>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <label for="contact-name">Your Name</label>
-                    <input type="text" id="contact-name" placeholder="Your Name"/>
+                    <input type="text" id="contact-name" placeholder="Your Name" defaultValue={name}/>
 
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" defaultValue={email} onChange={handleChange} placeholder="your email"/>
                     <label for="contact-message">Message</label>
-                    <textarea id="contact-message" placeholder="Message"></textarea>
+                    <textarea id="contact-message" placeholder="Message" defaultValue={message} onChange={handleChange}></textarea>
 
                     <button type="submit">Submit</button>
                 </form>
