@@ -2,7 +2,7 @@ import React from 'react';
 
 function Landing() {
   return (
-    <section class="hero">
+    <section className="hero">
       <div>
         <h3>Hi, I'm</h3>
         <h1>Mateo Cruz</h1>

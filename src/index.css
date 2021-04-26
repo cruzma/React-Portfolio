@@ -171,31 +171,31 @@ section h2{
 }
 
 .run-buddy{
-  /* background-image: url(./assets/images/02-run-buddy.jpg); */
+  background-image: url(./assets/images/02-run-buddy.jpg);
   background-size: cover;
   grid-column: 2 / span 5;
   grid-row: 1 / span 2;
 }
 .poke-parte{
-  /* background-image: url(./assets/images/poke-parte.PNG); */
+  background-image: url(./assets/images/poke-parte.PNG);
   background-size: cover;
   
 }
 
 .e-z-budget{
-  /* background-image: url(./assets/images/E-z-budget.JPG); */
+  background-image: url(./assets/images/E-z-budget.JPG);
   background-size: cover;
   
 }
 
 .react-calc{
-  /* background-image: url(./assets/images/02-portfolio-3.jpg); */
+  background-image: url(./assets/images/02-portfolio-3.jpg);
   background-size: cover;
 
 }
 
 .pastel-puzzle{
-  /* background-image: url(./assets/images/02-portfolio-4.jpg); */
+  background-image: url(./assets/images/02-portfolio-4.jpg);
   background-size: cover;
   
 }
