@@ -29,9 +29,9 @@ function Work(){
                     <span>React/Javascript/CSS</span>
                 </div>
                 </a>
-                <a href="#" class="grid-item pastel-puzzle">
+                <a href="#" class="grid-item mind-decks">
                 <div>
-                    <h3>Pastel Puzzels</h3>
+                    <h3>Mind Decks</h3>
                     <span>Mern Stack</span>
                 </div>
                 </a>
