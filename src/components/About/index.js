@@ -10,9 +10,15 @@ function About() {
             <img src={require(`../../assets/images/time-in tulum.jpg`).default} alt="Man looking up at ancient mayan ruin"/>
           </div>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error non reiciendis asperiores at quam ullam eveniet. Ipsum, ad ab iure tempore totam non dolor quos sit assumenda. Dolorum animi amet dignissimos repudiandae quibusdam suscipit assumenda. Autem beatae voluptatem dolor earum maxime architecto facilis aspernatur ab accusantium voluptate distinctio tempora error sint omnis eos reprehenderit quibusdam minima velit, provident ad aliquid eaque sequi! Impedit ipsam eum natus.</p>
+          <p>I am a Front End Web Developer where I recently earned a Certificate in the Full Stack Web Development Program at the University of Toronto. I seek to implement my skills to create functional and intuitive user experience websites. With my background in customer service I understand the importance of having a great customer/user experience whenever they interact with my websites.</p>
             <br/>
-          <p>Rerum blanditiis eligendi molestias reprehenderit distinctio quaerat laboriosam quas veritatis ducimus nisi. Animi quis, odio maxime aliquam ad repellendus, odit vel, doloribus at dignissimos sint aspernatur harum dolorem? Accusantium veniam optio velit harum ad aspernatur veritatis, iste libero animi debitis minima temporibus sed voluptatem? Dolores itaque dolor voluptatem sequi sint quidem nobis ab saepe, quae sunt a veniam perspiciatis cupiditate maiores quia nihil doloribus id magni. Repellat itaque ducimus eius ea temporibus omnis explicabo debitis rerum ex? Quas et cum possimus accusantium non ut!</p>
+          <p>You can always expect me to bring passion, a collaborative spirit, and an eagerness to learn and improve whenever possible. I am also effective at combining my skills in communication, creativity and teamwork to finish tasks.</p>
+          <br/>
+          <p>Health and Fitness is also one of my passions so when I'm not coding you could find me at a gym, soccer field or basketball court.</p>
+          <br/>
+          <p>I also love to travel. Before the travel restrictions were placed, I was in Mexico, Philippines, Cuba, U.S.A. Once the pandemic is done i hope to travel to Japan, El Salvador, Iceland.</p>
+          <br/>
+          <p>I am looking to add my skills to an already well driven and quality oriented team. Please feel free to contact me. </p>
         </div>
     </section>
   );
