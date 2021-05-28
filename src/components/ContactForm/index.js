@@ -3,10 +3,9 @@ import { validateEmail } from '../../utils/helpers';
 
 function Contact(){
 
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-    const [errorMessage, setErrorMessage] = useState('');
+    const [formState, setFormState] = useState({ name: '', email: '', message: '', mailSent: false, error: null });
     const { name, email, message } = formState;
-    
+    const [errorMessage, setErrorMessage] = useState('');
 
     function handleChange(e){
         if(e.target.name === 'email'){
@@ -16,34 +15,30 @@ function Contact(){
             if (!isValid) {
                 setErrorMessage('Your email is invalid.');
             } else {
-                if(!e.target.value.length){
-                    setErrorMessage(`${e.target.name} is required`);
-                } else {
+                if (!e.target.value.length) {
+                    setErrorMessage(`${e.target.name} is required.`);
+                  } else {
                     setErrorMessage('');
-                }
+                  }
             }
+
         }
         if(!errorMessage){
-            setFormState({...formState, [e.target.name]: e.target.value})
+            setFormState({...formState, [e.target.name]: e.target.value});
         }
         
-        console.log('errorMessage', errorMessage);
+        
     }
 
     function handleSubmit(e){
         e.preventDefault();
-        if (!errorMessage) {
-            setFormState({ [e.target.name]: e.target.value });
-            console.log('Form', formState);
-          }
+        console.log(formState);
     }
 
-    console.log(formState);
-
     return(
-        <section class="contact">
+        <section className="contact">
             <h2 id="contact-me">Contact Me</h2>
-            <div class="contact-container">
+            <div className="contact-container">
                 <div>
                 <h3>How to Reach Me</h3>
                 <address>
@@ -59,16 +54,23 @@ function Contact(){
                 </address>
                 </div>
 
-                <div class="contact-form">
+                <div className="contact-form">
                 <h3>Leave me a Message</h3>
-                <form onSubmit={handleSubmit}>
-                    <label for="contact-name">Your Name</label>
-                    <input type="text" id="contact-name" placeholder="Your Name" defaultValue={name}/>
+                <form id="contact-form" onSubmit={handleSubmit}>
+                    <label htmlFor="contact-name">Your Name</label>
+                    <input type="text" id="contact-name" placeholder="Your Name" defaultValue={name} onChange={handleChange} name="name"/>
 
-                    <label for="email">Email:</label>
+                    <label htmlFor="email">Email:</label>
                     <input type="email" name="email" defaultValue={email} onChange={handleChange} placeholder="your email"/>
-                    <label for="contact-message">Message</label>
-                    <textarea id="contact-message" placeholder="Message" defaultValue={message} onChange={handleChange}></textarea>
+
+                    <label htmlFor="contact-message">Message</label>
+                    <textarea id="contact-message" placeholder="Message" name="message" defaultValue={message} onChange={handleChange}></textarea>
+
+                    {errorMessage && (
+                        <div>
+                            <p className="error-text">{errorMessage}</p>
+                        </div>
+                    )}
 
                     <button type="submit">Submit</button>
                 </form>
