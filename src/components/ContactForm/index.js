@@ -41,9 +41,9 @@ function Contact(){
     console.log(formState);
 
     return(
-        <section class="contact">
+        <section className="contact">
             <h2 id="contact-me">Contact Me</h2>
-            <div class="contact-container">
+            <div className="contact-container">
                 <div>
                 <h3>How to Reach Me</h3>
                 <address>
@@ -59,16 +59,16 @@ function Contact(){
                 </address>
                 </div>
 
-                <div class="contact-form">
+                <div className="contact-form">
                 <h3>Leave me a Message</h3>
-                <form onSubmit={handleSubmit} action="contactForm.php" method="post">
-                    <label for="contact-name">Your Name</label>
+                <form onSubmit={handleSubmit}>
+                    <label htmlfor="contact-name">Your Name</label>
                     <input type="text" id="contact-name" placeholder="Your Name" defaultValue={name}/>
 
-                    <label for="email">Email:</label>
+                    <label htmlfor="email">Email:</label>
                     <input type="email" name="email" defaultValue={email} onChange={handleChange} placeholder="your email"/>
-                    <label for="contact-message">Message</label>
-                    <textarea id="contact-message" placeholder="Message" defaultValue={message} onChange={handleChange}></textarea>
+                    <label htmlfor="contact-message">Message</label>
+                    <textarea id="contact-message" placeholder="message" defaultValue={message} onChange={handleChange}></textarea>
 
                     <button type="submit">Submit</button>
                 </form>
