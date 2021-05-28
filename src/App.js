@@ -43,9 +43,11 @@ function App() {
         
       </main>
       <footer>
-        <h2>Made with ❤️</h2>
         
-        <p>&#169 2020 Mateo Cruz, Inc.</p>
+        <h2>Made with ❤️</h2>
+        <>
+          <p>&#169; 2020 Mateo Cruz, Inc.</p>
+        </>
       </footer>
     </div>
     

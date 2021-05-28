@@ -61,7 +61,7 @@ function Contact(){
 
                 <div class="contact-form">
                 <h3>Leave me a Message</h3>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} action="contactForm.php" method="post">
                     <label for="contact-name">Your Name</label>
                     <input type="text" id="contact-name" placeholder="Your Name" defaultValue={name}/>
 
