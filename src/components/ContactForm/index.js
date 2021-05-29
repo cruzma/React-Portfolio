@@ -1,3 +1,4 @@
+import { send } from 'emailjs-com';
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 
@@ -32,7 +33,18 @@ function Contact(){
 
     function handleSubmit(e){
         e.preventDefault();
-        console.log(formState);
+        send(
+            'service_g1vc2se',
+            'template_2snve4o',
+            formState,
+            'user_Xs86XG8xaQWaABmm3wUXp'
+        )
+        .then((response) => {
+            console.log('success', response.status, response.text);
+        })
+        .catch((err) => {
+            console.log('Failed...', err);
+        })
     }
 
     return(
