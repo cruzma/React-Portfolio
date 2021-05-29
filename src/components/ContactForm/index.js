@@ -1,12 +1,12 @@
+import { send } from 'emailjs-com';
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 
 function Contact(){
 
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-    const [errorMessage, setErrorMessage] = useState('');
+    const [formState, setFormState] = useState({ name: '', email: '', message: '', mailSent: false, error: null });
     const { name, email, message } = formState;
-    
+    const [errorMessage, setErrorMessage] = useState('');
 
     function handleChange(e){
         if(e.target.name === 'email'){
@@ -16,29 +16,36 @@ function Contact(){
             if (!isValid) {
                 setErrorMessage('Your email is invalid.');
             } else {
-                if(!e.target.value.length){
-                    setErrorMessage(`${e.target.name} is required`);
-                } else {
+                if (!e.target.value.length) {
+                    setErrorMessage(`${e.target.name} is required.`);
+                  } else {
                     setErrorMessage('');
-                }
+                  }
             }
+
         }
         if(!errorMessage){
-            setFormState({...formState, [e.target.name]: e.target.value})
+            setFormState({...formState, [e.target.name]: e.target.value});
         }
         
-        console.log('errorMessage', errorMessage);
+        
     }
 
     function handleSubmit(e){
         e.preventDefault();
-        if (!errorMessage) {
-            setFormState({ [e.target.name]: e.target.value });
-            console.log('Form', formState);
-          }
+        send(
+            'service_g1vc2se',
+            'template_2snve4o',
+            formState,
+            'user_Xs86XG8xaQWaABmm3wUXp'
+        )
+        .then((response) => {
+            console.log('success', response.status, response.text);
+        })
+        .catch((err) => {
+            console.log('Failed...', err);
+        })
     }
-
-    console.log(formState);
 
     return(
         <section className="contact">
