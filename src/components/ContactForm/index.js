@@ -69,12 +69,12 @@ function Contact(){
                 <div className="contact-form">
                 <h3>Leave me a Message</h3>
                 <form onSubmit={handleSubmit}>
-                    <label htmlfor="contact-name">Your Name</label>
+                    <label htmlFor="contact-name">Your Name</label>
                     <input type="text" id="contact-name" placeholder="Your Name" defaultValue={name}/>
 
-                    <label htmlfor="email">Email:</label>
+                    <label htmlFor="email">Email:</label>
                     <input type="email" name="email" defaultValue={email} onChange={handleChange} placeholder="your email"/>
-                    <label htmlfor="contact-message">Message</label>
+                    <label htmlFor="contact-message">Message</label>
                     <textarea id="contact-message" placeholder="message" defaultValue={message} onChange={handleChange}></textarea>
 
                     <button type="submit">Submit</button>
