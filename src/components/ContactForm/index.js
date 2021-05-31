@@ -4,7 +4,7 @@ import { validateEmail } from '../../utils/helpers';
 
 function Contact(){
 
-    const [formState, setFormState] = useState({ name: '', email: '', message: '', mailSent: false, error: null });
+    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
 
@@ -45,6 +45,7 @@ function Contact(){
         .catch((err) => {
             console.log('Failed...', err);
         })
+
     }
 
     return(
