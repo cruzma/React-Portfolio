@@ -9,23 +9,24 @@ function Contact(){
     const [errorMessage, setErrorMessage] = useState('');
 
     function handleChange(e){
-        if(e.target.name === 'email'){
+
+        if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
             console.log(isValid);
-            // isValid conditional statement
+            
             if (!isValid) {
                 setErrorMessage('Your email is invalid.');
             } else {
                 if (!e.target.value.length) {
                     setErrorMessage(`${e.target.name} is required.`);
-                  } else {
+                } else {
                     setErrorMessage('');
-                  }
+                }
             }
+        }  
 
-        }
-        if(!errorMessage){
-            setFormState({...formState, [e.target.name]: e.target.value});
+        if (!errorMessage) {
+            setFormState({ ...formState, [e.target.name]: e.target.value });
         }
         
         
@@ -45,6 +46,7 @@ function Contact(){
         .catch((err) => {
             console.log('Failed...', err);
         })
+        console.log(formState);
 
     }
 
@@ -56,13 +58,13 @@ function Contact(){
                 <h3>How to Reach Me</h3>
                 <address>
                     <div>
-                    <p>Phone: <a href="tel:+5555555555">555.555.5555</a></p>
+                    <p>Phone: <a href="tel:+6474570516">(647)457-0516</a></p>
                     <p>Email: <a href="mailto:mtaycruz@gmail.com">mtaycruz@gmail.com</a></p>
                     </div>
                     <div>
                     <a href="https://github.com/cruzma"><img src={require("../../assets/images/github.svg").default} alt="github logo"/></a>
-                    <a href="https://twitter.com/"><img src={require("../../assets/images/twitter.svg").default} alt="twitter bird"/> </a>
-                    <a href="https://www.spotify.com/"><img src={require("../../assets/images/spotify.svg").default} alt="spotify logo"/></a>
+                    <a href="https://www.linkedin.com/in/mateo-cruz-b76619133/"><img src={require("../../assets/images/linkedin-icon.svg").default} alt="linkedin logo"/></a>
+                    <a href="mailto: mtaycruz@gmail.com"><img src={require("../../assets/images/message.svg").default} alt="Email logo"/></a>
                     </div>
                 </address>
                 </div>
@@ -71,12 +73,13 @@ function Contact(){
                 <h3>Leave me a Message</h3>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="contact-name">Your Name</label>
-                    <input type="text" id="contact-name" placeholder="Your Name" defaultValue={name}/>
+                    <input type="text" name="name" defaultValue={name} id="contact-name" placeholder="Your Name"  onChange={handleChange}/>
 
                     <label htmlFor="email">Email:</label>
                     <input type="email" name="email" defaultValue={email} onChange={handleChange} placeholder="your email"/>
+
                     <label htmlFor="contact-message">Message</label>
-                    <textarea id="contact-message" placeholder="message" defaultValue={message} onChange={handleChange}></textarea>
+                    <textarea id="contact-message" name="message" defaultValue={message} placeholder="message"  onChange={handleChange}></textarea>
 
                     <button type="submit">Submit</button>
                 </form>
