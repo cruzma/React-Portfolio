@@ -2,11 +2,11 @@ import React from 'react';
 
 function About() {
   return (
-    <section class="about-me-container">
+    <section className="about-me-container">
       
         <h2 id="about-me">About Me</h2>
-        <div class="about-me-info">
-          <div class="image-container">
+        <div className="about-me-info">
+          <div className="image-container">
             <img src={require(`../../assets/images/time-in tulum.jpg`).default} alt="Man looking up at ancient mayan ruin"/>
           </div>
 
