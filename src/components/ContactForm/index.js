@@ -41,7 +41,8 @@ function Contact(){
             'user_Xs86XG8xaQWaABmm3wUXp'
         )
         .then((response) => {
-            console.log('success', response.status, response.text);
+            alert('Message has been Sent', response.status, response.text);
+
         })
         .catch((err) => {
             console.log('Failed...', err);
@@ -49,6 +50,7 @@ function Contact(){
         console.log(formState);
 
     }
+
 
     return(
         <section className="contact">
