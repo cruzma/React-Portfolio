@@ -1,5 +1,6 @@
 import React from 'react';
 
+import './resume-styling.css';
 
 function Resume(){
     return (
@@ -8,25 +9,19 @@ function Resume(){
             <div className="proficiencies">
                 <p>Download my resume here: </p><a href="../../assets/MateoCruz3resume.docx" download>Resume</a>
                 <br/>      
-                <h3>Front-end Proficiencies</h3>
+                <h3>My Proficiencies</h3>
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>JQUERY</li>
-                    <li>responsive design</li>
-                    <li>react</li>
-                    <li>Bootstrap</li>
-                </ul>
-
-                <h3>Back-end Proficiencies</h3>
-                <ul>
-                    <li>APis</li>
-                    <li>Node</li>
-                    <li>Express</li>
-                    <li>Mysql, sequelize</li>
-                    <li>Nosql</li>
-                    <li>Progressive Web Applications</li>
+                    <li><img src={require("../../assets/images/html-5.svg").default}></img></li>
+                    <li><img src={require("../../assets/images/css.svg").default}></img></li>
+                    <li><img src={require("../../assets/images/javascript.svg").default}></img></li>
+                    <li><img src={require("../../assets/images/react.svg").default}></img></li>
+                    <li><img src={require("../../assets/images/bootstrap.png").default}></img></li>
+                    <li><img src={require("../../assets/images/api.svg").default}></img></li>
+                    <li><img src={require("../../assets/images/Node.js_logo.svg").default}></img></li>
+                    <li><img src={require("../../assets/images/Npm-logo.svg").default}></img></li>
+                    <li><img src={require("../../assets/images/github.svg").default}></img></li>
+                    <li><img src={require("../../assets/images/heroku.svg").default}></img></li>
+                    <li><img src={require("../../assets/images/mongodb.svg").default}></img></li>
                 </ul>
             </div>
         </section>
