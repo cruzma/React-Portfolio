@@ -2,39 +2,70 @@ import React from 'react';
 
 function Work(){
     return(
-        <section class="work-container">
+        <section className="work-container">
             <h2 id="work">Work</h2>
-            <div class="grid-container">    
-                <a href="https://cruzma.github.io/run-buddy/" class="grid-item run-buddy">
-                <div>
+            <div className="grid-container">    
+                <div class="grid-item run-buddy">
+                <div className="project-name">
                     <h3>Run Buddy</h3>
                     <span>HTML/CSS</span>
                 </div>
-                </a>
-                <a href="https://damn-ma-6.github.io/Poke-Parte/" class="grid-item poke-parte">
-                <div>
+                <div className="grid-buttons">
+                        <a href="#">github</a>
+    
+                        <a href="https://cruzma.github.io/run-buddy/">website</a>
+                </div>
+
+            </div>
+
+            <div className="grid-item poke-parte">
+
+                <div className="project-name"> 
                     <h3>Poke Parte</h3>
                     <span>Front End Design</span>
                 </div>
-                </a>
-                <a href="https://thawing-mesa-66730.herokuapp.com/" class="grid-item budget-tracker">
-                <div>
+                <div className="grid-buttons">
+                    <a href="https://damn-ma-6.github.io/Poke-Parte/">github</a>
+
+                    <a href="#">website</a>
+                </div>
+            </div>
+
+            <div className="grid-item budget-tracker">
+                <div className="project-name">
                     <h3>Budget Tracker</h3>
-                    <span>A progressive web application that gives users the ability to add expenses and and deposits with or without a connection</span>
+                    <span>A progressive web application that gives users the ability to add expenses and deposits with or without a internet connection</span>
                 </div>
-                </a>
-                <a href="https://cruzma.github.io/weather-dashboard/" class="grid-item weather-dash">
-                <div>
+                <div className="grid-buttons">
+                    <a href="#">github</a>
+
+                    <a href="https://thawing-mesa-66730.herokuapp.com/">website</a>
+                </div>
+            </div>
+
+            <div className="grid-item weather-dash">
+                <div className="project-name">
                     <h3>Weather Dashboard</h3>
-                    <span>HTML/CSS/Javascript</span>
+                    <span>Using a a third-party API this weather dashboard will run in the browser and feature dynamically updated HTML and CSS</span>
                 </div>
-                </a>
-                <a href="#" class="grid-item mind-decks">
-                <div>
+                <div className="grid-buttons">
+                    <a href="#">github</a>
+
+                    <a href="https://cruzma.github.io/weather-dashboard/">website</a>
+                </div>
+            </div>
+
+            <div href="#" className="grid-item mind-decks">
+                <div className="project-name">
                     <h3>Mind Decks</h3>
                     <span>Mern Stack</span>
                 </div>
-                </a>
+                <div className="grid-buttons">
+                    <a href="#">github</a>
+
+                    <a href="#">website</a>
+                </div>
+            </div>
         
                 
             </div>

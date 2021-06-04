@@ -154,20 +154,23 @@ section h2{
   column-gap: 10px;
   row-gap: 10px;
   grid-auto-flow: dense;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   grid-auto-rows: minmax(150px, 1fr);
   background-blend-mode: soft-light;
 }
 
-.grid-item{
+.grid-item {
   grid-column: span 3;
   min-height: 150px;
   display: flex;
-  align-items: flex-end;
-  padding: 0 0 30px 0;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 0 0 30px 0; */
+  justify-content: space-evenly;
   text-decoration: none;
   border-radius: 10%;
   color: rgba(238, 238, 247, 1);
+  
 }
 
 .grid-item:hover{
@@ -177,45 +180,73 @@ section h2{
   
 }
 
-.grid-item div{
-  background-color: rgba(68, 88, 119, 1);
-  padding:  0  10px 0 10px;
+.project-name {
+  background-color: rgba(68, 88, 119, 0.5);
+  padding: 0 10px 0 10px;
   border-radius: 10%;
+  text-align: center;
+}
+
+.project-name:hover{
+  background-color: rgba(68, 88, 119, 1);
+  transition: .4s;
+}
+
+.grid-buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  background-color: transparent;
+  
+}
+
+.grid-buttons a {
+  background-color: rgb(0, 255, 255, .5);
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.grid-buttons a:hover{
+  background-color: rgb(0, 255, 255, 1);
+  transition: .4s;
 }
 
 .run-buddy{
   background-image: url(./assets/images/02-run-buddy.jpg);
   background-size: cover;
-  grid-column: 4 / span 6;
+  grid-column: 1 / span 3;
   grid-row: 1 / span 2;
 }
+
 .poke-parte{
   background-image: url(./assets/images/poke-parte.PNG);
   background-size: cover;
-  grid-column: 4 / span 3;
-  grid-row: 3;
+  grid-column: 5 / span 3;
+  grid-row: 1 / span 2;
   
 }
 
 .budget-tracker{
   background-image: url(./assets/images/budgetTracker.JPG);
   background-size: cover;
-  grid-column: 7 /span 3;
-  grid-row: 3;
+  grid-column: 9 /span 3;
+  grid-row: 1 /span 2;
 }
 
 .weather-dash{
   background-image: url(./assets/images/weather-dash.PNG);
   background-size: cover;
-  grid-column: 4 /span 3;
-  grid-row: 4;
+  grid-column: 3 /span 3;
+  grid-row: 3 / span 2;
 }
 
 .mind-decks{
   background-image: url(./assets/images/mindDecks.JPG);
   background-size: cover;
   grid-column: 7 /span 3;
-  grid-row: 4;
+  grid-row: 3 / span 2;
 }
 
 
