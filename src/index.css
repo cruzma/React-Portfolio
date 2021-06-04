@@ -197,15 +197,15 @@ section h2{
   
 }
 
-.e-z-budget{
-  background-image: url(./assets/images/E-z-budget.JPG);
+.budget-tracker{
+  background-image: url(./assets/images/budgetTracker.JPG);
   background-size: cover;
   grid-column: 7 /span 3;
   grid-row: 3;
 }
 
-.react-calc{
-  background-image: url(./assets/images/02-portfolio-3.jpg);
+.weather-dash{
+  background-image: url(./assets/images/weather-dash.PNG);
   background-size: cover;
   grid-column: 4 /span 3;
   grid-row: 4;

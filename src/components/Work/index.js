@@ -17,16 +17,16 @@ function Work(){
                     <span>Front End Design</span>
                 </div>
                 </a>
-                <a href="https://ez-budget10.herokuapp.com/" class="grid-item e-z-budget">
+                <a href="https://thawing-mesa-66730.herokuapp.com/" class="grid-item budget-tracker">
                 <div>
-                    <h3>E-Z-Budget</h3>
-                    <span>Budget Saving App</span>
+                    <h3>Budget Tracker</h3>
+                    <span>A progressive web application that gives users the ability to add expenses and and deposits with or without a connection</span>
                 </div>
                 </a>
-                <a href="#" class="grid-item react-calc">
+                <a href="https://cruzma.github.io/weather-dashboard/" class="grid-item weather-dash">
                 <div>
-                    <h3>Calculator</h3>
-                    <span>React/Javascript/CSS</span>
+                    <h3>Weather Dashboard</h3>
+                    <span>HTML/CSS/Javascript</span>
                 </div>
                 </a>
                 <a href="#" class="grid-item mind-decks">
