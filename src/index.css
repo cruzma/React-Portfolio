@@ -242,8 +242,8 @@ section h2{
   grid-row: 3 / span 2;
 }
 
-.mind-decks{
-  background-image: url(./assets/images/mindDecks.JPG);
+.shop-shop{
+  background-image: url(./assets/images/shop-shop.JPG);
   background-size: cover;
   grid-column: 7 /span 3;
   grid-row: 3 / span 2;

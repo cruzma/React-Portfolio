@@ -8,7 +8,7 @@ function Work(){
                 <div class="grid-item run-buddy">
                 <div className="project-name">
                     <h3>Run Buddy</h3>
-                    <span>HTML/CSS</span>
+                    <span>Simple web design for a fitness center offering multiple services</span>
                 </div>
                 <div className="grid-buttons">
                         <a href="#">github</a>
@@ -22,12 +22,12 @@ function Work(){
 
                 <div className="project-name"> 
                     <h3>Poke Parte</h3>
-                    <span>Front End Design</span>
+                    <span>Front End design using Pokemon API and Weather API to display pokemons</span>
                 </div>
                 <div className="grid-buttons">
-                    <a href="https://damn-ma-6.github.io/Poke-Parte/">github</a>
+                    <a href="#">github</a>
 
-                    <a href="#">website</a>
+                    <a href="https://damn-ma-6.github.io/Poke-Parte/">website</a>
                 </div>
             </div>
 
@@ -55,15 +55,15 @@ function Work(){
                 </div>
             </div>
 
-            <div href="#" className="grid-item mind-decks">
+            <div href="#" className="grid-item shop-shop">
                 <div className="project-name">
-                    <h3>Mind Decks</h3>
+                    <h3>Shop Shop</h3>
                     <span>Mern Stack</span>
                 </div>
                 <div className="grid-buttons">
-                    <a href="#">github</a>
+                    <a href="https://github.com/cruzma/shop-shop.git">github</a>
 
-                    <a href="#">website</a>
+                    <a href="https://serene-caverns-56086.herokuapp.com/qqv">website</a>
                 </div>
             </div>
         
