@@ -63,7 +63,7 @@ function Work(){
                 <div className="grid-buttons">
                     <a href="https://github.com/cruzma/shop-shop.git">github</a>
 
-                    <a href="https://serene-caverns-56086.herokuapp.com/qqv">website</a>
+                    <a href="https://serene-caverns-56086.herokuapp.com/">website</a>
                 </div>
             </div>
         
