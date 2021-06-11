@@ -20,7 +20,7 @@ body{
 
 .content{
   flex: 1 0 auto;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 /* header section begins */
@@ -30,8 +30,12 @@ header{
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
+  background-image: url(./assets/images/hero-pic.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 header h2{
@@ -90,18 +94,24 @@ section h2{
 
 /* hero section begins */
 
-.hero{
+.hero {
   background-image: url(./assets/images/hero-pic.jpg);
   background-size: cover;
-  background-position: center;
-  height: 100vh;
+  background-position: 80%;
+  /* height: 100vh; */
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color: rgb(0, 0, 0);
+  background-attachment: fixed;
 }
 
+.hero-logo{
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
 
 .hero h1{
   font-size: 50px;
@@ -342,6 +352,7 @@ footer{
   background-color: rgba(68, 88, 119, 1);
   color:rgba(238, 238, 247, 1);
   flex-shrink: 0;
+  text-align: center;
 }
 
 footer h2{
@@ -356,7 +367,21 @@ footer p{
 
 /* MEDIA QUERY FOR SMALL SCREENS, tablets and below */
 
-@media screen and (max-width: 975px){
+@media screen and (max-width: 1024px){
+
+  header{
+    justify-content: center;
+    background-position: 28%;
+  }
+
+  .hero{
+    background-position: 28%;
+    height: 80vh;
+  }
+
+  .hero-logo{
+    margin-top: 40%;
+  }
 
   .about-me-info{
     flex-direction: column;
@@ -391,6 +416,7 @@ footer p{
 
     header{
       justify-content: center;
+      background-position: 28%;
     }
 
     header nav ul li a{
@@ -434,8 +460,10 @@ footer p{
 
   @media screen and (max-width: 450px){
       header{
-            padding: 0;
-            flex-wrap: wrap;
+          padding: 0;
+          flex-wrap: wrap;
+          background-color: rgba(238, 238, 247, 1);
+          background-image: none;
       }
       header nav ul li a{
         margin: 1px;
@@ -446,6 +474,15 @@ footer p{
         flex-wrap: wrap;
         justify-content: space-around;
       }
+
+      .hero-logo{
+        margin-top: 50%;
+      }
+
+      .hero{
+        height: 100vh;
+      }
+
       .hero h1{
         font-size: 35px;
       }
