@@ -392,21 +392,37 @@ footer p{
     margin: 20px;
     text-align: center;
   }
-  .run-buddy {
-    grid-column: 2 / span 11;
-    }
-  .poke-parte {
-    grid-column: 2/ span 5;
-    }
-  .e-z-budget {
-    grid-column: 8 / span 5;
-    }
-  .react-calc {
-    grid-column: 2/ span 5;
-    }
-  .pastel-puzzle {
-    grid-column: 8 / span 5;
-    }
+
+  .run-buddy{
+
+    grid-column: 2 / span 4;
+    grid-row: 1 / span 2;
+  }
+  
+  .poke-parte{
+
+    grid-column: 7 / span 4;
+    grid-row: 1 / span 2;
+    
+  }
+  
+  .budget-tracker{
+
+    grid-column: 2 /span 4;
+    grid-row: 3 /span 2;
+  }
+  
+  .weather-dash{
+
+    grid-column: 7 /span 4;
+    grid-row: 3 / span 2;
+  }
+  
+  .shop-shop{
+
+    grid-column: 4 /span 5;
+    grid-row: 5 / span 2;
+  }
 }
 
 
@@ -429,18 +445,36 @@ footer p{
     .about-me-info p{
       width: 100%;
     }
-    .poke-parte {
-      grid-column: 2/ span 11;
-      }
-    .e-z-budget {
-      grid-column: 2 / span 11;
-      }
-    .react-calc {
-      grid-column: 2/ span 11;
-      }
-    .pastel-puzzle {
-      grid-column: 2 / span 11;
-      }
+    .run-buddy{
+
+      grid-column: 2 / span 9;
+      grid-row: 1 / span 2;
+    }
+    
+    .poke-parte{
+  
+      grid-column: 2 / span 9;
+      grid-row: 3 / span 2;
+      
+    }
+    
+    .budget-tracker{
+  
+      grid-column: 2 / span 9;
+      grid-row: 5 /span 2;
+    }
+    
+    .weather-dash{
+  
+      grid-column: 2 / span 9;
+      grid-row: 7 / span 2;
+    }
+    
+    .shop-shop{
+  
+      grid-column: 2 / span 9;
+      grid-row: 9 / span 2;
+    }
 
 
     .contact-container{
@@ -490,6 +524,38 @@ footer p{
       .proficiencies{
         padding: 10px 40px 10px 40px;
       }
+
+      .run-buddy{
+
+        grid-column: 1 / span 11;
+        grid-row: 1 / span 2;
+      }
+      
+      .poke-parte{
+    
+        grid-column: 1 / span 11;
+        grid-row: 3 / span 2;
+        
+      }
+      
+      .budget-tracker{
+    
+        grid-column: 1 / span 11;
+        grid-row: 5 /span 2;
+      }
+      
+      .weather-dash{
+    
+        grid-column: 1 / span 11;
+        grid-row: 7 / span 2;
+      }
+      
+      .shop-shop{
+    
+        grid-column: 1 / span 11;
+        grid-row: 9 / span 2;
+      }
+  
 
       footer{
         flex-direction: column;
