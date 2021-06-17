@@ -34,7 +34,7 @@ function Work(){
             <div className="grid-item budget-tracker">
                 <div className="project-name">
                     <h3>Budget Tracker</h3>
-                    <span>A progressive web application that gives users the ability to add expenses and deposits with or without a internet connection</span>
+                    <span>A progressive web application that gives users the ability to add expenses and deposits with or without an internet connection</span>
                 </div>
                 <div className="grid-buttons">
                     <a href="https://github.com/cruzma/budget-tracker.git">github</a>
