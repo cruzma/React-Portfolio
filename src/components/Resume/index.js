@@ -7,7 +7,7 @@ function Resume(){
         
         <section className="hero">
             <div className="proficiencies">
-                <p>Download my resume here: </p><a href={require("../../assets/Mateo Cruz 3 resume.pdf").default} target="_blank" id="resume">Resume</a>
+                <p>Download my resume here: </p><a href={require("../../assets/MateoCruz-resume.docx").default} target="_blank" id="resume">Resume</a>
                 <br/>      
                 <h3>My Proficiencies</h3>
                 <ul>
