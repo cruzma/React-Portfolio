@@ -33,13 +33,13 @@ function Work(){
 
             <div className="grid-item budget-tracker">
                 <div className="project-name">
-                    <h3>Budget Tracker</h3>
-                    <span>A progressive web application that gives users the ability to add expenses and deposits with or without an internet connection</span>
+                    <h3>Love Lorena</h3>
+                    <span>A website for a wedding planner that features there services and positive reviews</span>
                 </div>
                 <div className="grid-buttons">
-                    <a href="https://github.com/cruzma/budget-tracker.git">github</a>
+                    <a href="https://github.com/cruzma/misa-wedding-site">github</a>
 
-                    <a href="https://thawing-mesa-66730.herokuapp.com/">website</a>
+                    <a href="https://cruzma.github.io/misa-wedding-site/">website</a>
                 </div>
             </div>
 
