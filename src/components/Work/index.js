@@ -55,15 +55,15 @@ function Work(){
                 </div>
             </div>
 
-            <div href="#" className="grid-item shop-shop">
+            <div href="#" className="grid-item token-train">
                 <div className="project-name">
-                    <h3>Shop Shop</h3>
-                    <span>A simple e-commerce website using Redux library to manage React application</span>
+                    <h3>Token Train</h3>
+                    <span>A news aggregator type app built with React.js that utilizes data from REST API's</span>
                 </div>
                 <div className="grid-buttons">
-                    <a href="https://github.com/cruzma/shop-shop.git">github</a>
+                    <a href="https://github.com/chingu-voyages/v36-geckos-team-07">github</a>
 
-                    <a href="https://serene-caverns-56086.herokuapp.com/">website</a>
+                    <a href="https://tokentrain.netlify.app/">website</a>
                 </div>
             </div>
         

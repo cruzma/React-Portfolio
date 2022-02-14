@@ -252,8 +252,8 @@ section h2{
   grid-row: 3 / span 2;
 }
 
-.shop-shop{
-  background-image: url(./assets/images/shop-shop.JPG);
+.token-train{
+  background-image: url(./assets/images/token-train.JPG);
   background-size: cover;
   grid-column: 7 /span 3;
   grid-row: 3 / span 2;
