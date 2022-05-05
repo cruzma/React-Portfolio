@@ -20,7 +20,7 @@ body{
 
 .content{
   flex: 1 0 auto;
-  min-height: 80vh;
+  min-height: 82vh;
 }
 
 /* header section begins */
@@ -98,9 +98,8 @@ section h2{
   background-image: url(./assets/images/hero-pic.jpg);
   background-size: cover;
   background-position: 80%;
-  /* height: 100vh; */
+  height: 82vh;
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;

@@ -7,7 +7,7 @@ function Resume(){
         
         <section className="hero">
             <div className="proficiencies">
-                <p>Download my resume here: </p><a href={require("../../assets/MateoCV.docx").default} target="_blank" id="resume">Resume</a>
+                <p>Download my resume here: </p><a href={require("../../assets/MateoCruzCV.pdf").default} id="resume">Resume</a>
                 <br/>      
                 <h3>My Proficiencies</h3>
                 <ul>
