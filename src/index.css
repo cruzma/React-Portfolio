@@ -417,7 +417,7 @@ footer p{
     grid-row: 3 / span 2;
   }
   
-  .shop-shop{
+  .token-train{
 
     grid-column: 4 /span 5;
     grid-row: 5 / span 2;
@@ -469,7 +469,7 @@ footer p{
       grid-row: 7 / span 2;
     }
     
-    .shop-shop{
+    .token-train{
   
       grid-column: 2 / span 9;
       grid-row: 9 / span 2;
